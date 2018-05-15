@@ -1,4 +1,4 @@
-# Hologirl bot for Discrod APP
+# Hologirl bot for Discord APP
 
 Create Hologirl Bot for Discord because i like discord. Hologirl - retrowave music bot and some sort of funny entertainment
 
