@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
+const got = require('got');
 const bot = new Discord.Client();
-var GphApiClient = require('giphy-js-sdk-core');
+const fetch = require('node-fetch');
+var varib = require('D:/GitHub/HologirlDiscrod/config.js');
 
-var BOT_ID = 'token';
-botGif = GphApiClient("token");
+const gif_url = 'http://api.giphy.com/v1/gifs/search?api_key=' + varib.GIF_API + '&limit=5';
 
 bot.on('ready', () =>{
     console.log('Bot is ready to deploy!');
@@ -15,8 +16,8 @@ bot.on('message', (message) => {
         message.channel.send('pong');
     }
     if(message.content == '!gif'){
-
+        
     }
 });
 
-bot.login(BOT_ID);
+bot.login(varib.BOT_TOKEN);
